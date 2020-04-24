@@ -22,6 +22,8 @@ produces:
 paths:
   /pets:
     get:
+      tags:
+        - x-EndpointEntity-Extension
       description: |
         Returns all pets from the system that the user has access to
       operationId: findPets
