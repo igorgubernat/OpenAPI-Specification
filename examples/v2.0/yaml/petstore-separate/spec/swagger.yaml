@@ -63,6 +63,8 @@ paths:
             $ref: '../common/Error.yaml'
   /pets/{id}:
     get:
+      tags:
+        - x-EndpointEntity-Extension
       description: Returns a user based on a single ID, if the user does not have access to the pet
       operationId: find pet by id
       parameters:
