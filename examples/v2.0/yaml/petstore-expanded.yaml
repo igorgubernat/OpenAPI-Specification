@@ -111,15 +111,14 @@ paths:
             $ref: '#/definitions/Error'
 definitions:
   Pet:
-    allOf:
-      - $ref: '#/definitions/NewPet'
-      - required:
-        - id
-        type: "object"
-        properties:
-          id:
-            type: integer
-            format: int64
+    type: "object"
+    required:
+      - name  
+    properties:
+      name:
+        type: string
+      tag:
+        type: string 
 
   NewPet:
     type: "object"
